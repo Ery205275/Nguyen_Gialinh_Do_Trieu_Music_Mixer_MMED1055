@@ -1,11 +1,25 @@
-# Description
+# Music Mixer DJ Project 
 
-The focus of this project is to collaboratively research, experiment with and ultimately designand build a multimedia application using design and motion tools as well as HTML, CSS andJavaScript. Your team will implement drag and drop functionality to load audio clips and createa dynamic audio experience, trigger animation, and play a compiled audio track 
+Website that allows dragging and dropping of audio tracks onto music players. Once a song is drop onto the website, users than have options to manipulate the audio.
 
 ##Student
 
 1. Nguyen Gia Linh
 2. Trieu Do
+
+## To Use
+
+Open `index.html` in any modern web browser (except for previous versions of Internet Explorer)
+
+## Reason for Project
+
+The focus of this project is to collaboratively research, experiment with and ultimately designand build a multimedia application using design and motion tools as well as HTML, CSS andJavaScript. A team will implement drag and drop functionality to load audio clips and createa dynamic audio experience, trigger animation, and play a compiled audio track. 
+
+## Colours
+
+## Inpsriration
+
+Our website is inspired by Incredibox
 
 ## Prerequisites
 
