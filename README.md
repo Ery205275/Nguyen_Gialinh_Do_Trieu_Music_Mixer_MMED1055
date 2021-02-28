@@ -17,6 +17,10 @@ The focus of this project is to collaboratively research, experiment with and ul
 
 ## Colours
 
+## Inpsriration
+
+Our website is inspired by Incredibox
+
 ## Prerequisites
 
 A code editer program to write code for HTML, Javascript and CSS (for example, Sublime Text).
