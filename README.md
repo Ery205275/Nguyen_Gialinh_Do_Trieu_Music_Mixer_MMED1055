@@ -1,0 +1,2 @@
+# Nguyen_Gialinh_Do_Trieu_Music_Mixer_MMED1055
+The focus of this project is to collaboratively research, experiment with and ultimately designand build a multimedia application using design and motion tools as well as HTML, CSS andJavaScript. Your team will implement drag and drop functionality to load audio clips and createa dynamic audio experience, trigger animation, and play a compiled audio track 
