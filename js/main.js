@@ -1,44 +1,36 @@
 (() => {
-	// select and work with the element 
-	console.log('fired!');
+
+  const keyGraphics = document.querySelectorAll('.key');
 
 
-let theAudio = document.querySelector("audio"),
-	playButton = document.querySelector("button"),
-	albumArt = document.querySelector(".track-ref");
+  //keyGraphics.forEach(key => key.addEventListener("keyup", catchKeyCode));
 
-function playTrack() {
-	
-	let targetTrack = this.dataset.trackref;
+  function catchKeyCode(event) {
+    //let key = event.keyCode
+    //debugger;
+    let audio = document.querySelector(`audio[data-key="${event.keyCode}"]`),
+      currentKey = document.querySelector(`div[data-key="${event.keyCode}"]`);
 
-	theAudio.src = 'audio/${targetTrack}.mp3';
+    if (!audio) { return; }
 
-	theAudio.volume= 0.25;
+    currentKey.classList.add("playing");
 
-	theAudio.load();
+    audio.currentTime = 0;
 
-	playTrack();
-}
+    audio.play();
+  }
 
-function stopTrack(){
-	theAudio.pause();
-}
-function playTrack(){
-	theAudio.play();
-}
+  //remove playing class after the transition fire at the first time
 
-function rewindTrack() {
-	theAudion.currentTime =0;
-}
+  function resetKey(event) {
+    //debugger;
 
+    if (event.propertyName === "transform") {
+      this.classList.remove("playing");
+    }
+  }
 
-for (cover of albumArt) {
-	debugger;
-	cover.addEventListener("click", loadTrack)
-}
+  keyGraphics.forEach(key => key.addEventListener("transitioned", resetKey));
 
-controlButtons{0}.addEventListener("click", playTrack);
-controlButtons{1}.addEventListener("click", stopTrack);
-controlButtons{2}.addEventListener("click", rewindTrack);
-
-})()
+  window.addEventListener("keyup", catchKeyCode);
+})();
